@@ -1,0 +1,352 @@
+/* @import url('https://fonts.googleapis.com/css?family=Nunito|Cutive+Mono|Open+Sans'); */
+/* @import url('https://fonts.googleapis.com/css?family=Nunito&family=Cutive+Mono&family=Open+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Nunito:wght@200;400;600;800&family=Open+Sans:wght@300;400;600&display=swap');
+html{
+    font-family: 'Open Sans',sans-serif;
+    background: whitesmoke;
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+}
+html{
+  font-size: 50%;
+}
+body {
+      font-size: 1.5rem; /* 15px */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+hr{
+    background: grey;
+    margin: 30px 0 30px;
+}
+#container{
+    position: relative;
+    display: flex;
+}
+#profile{
+    flex: 15%;
+    display: block;
+    position: relative;
+    margin: 5% 2% 0 10%;
+    width: 100%;
+    height: 100%;
+}
+#info-cards{
+    flex: 55%;
+    display: block;
+    margin-top: 5%;
+    margin-right: 6%;
+    width: 100%;
+    height: 100%;
+}
+#image{
+    position: relative;
+    overflow: hidden;
+}
+#image, #profile-photo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+/* #image > a{
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5) !important;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+#image > a > i{
+    -webkit-text-stroke: 1px #ffffffdd;
+    padding: 40%;
+}
+#image:hover a{
+    display: block;
+}
+#profile-photo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+} */
+#name{
+    font-size: 2.3rem !important;
+    line-height: 25px !important;
+    margin-bottom: 10px;
+}
+#designation{
+    font-size: 1.7rem !important;
+}
+#about,.card > ul > li{
+    padding: 0 0 0 0px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+#about{
+    font-size: 2.rem !important;
+    padding: 0 !important;
+}
+#name, #about > p{
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+/* #email{
+    font-size: 15px !important;
+    font-weight: bold !important;
+    font-family: 'Cutive Mono',monospace;
+} */
+#college,#email,#year-graduation,#education,#more-about,#telephone,#fax,#location,#linkedin,#github{
+    color: #555;
+    font-size: 1.35rem;
+}
+strong,span{
+    color: black;
+    font-size: 1.6rem;
+}
+#social-links,#about{
+    display: inline-block;
+}
+#social-links{
+    margin-bottom: 12px;
+}
+#social-links a{
+    margin: 0 10px;
+}
+#edit-intro{
+    display: block;
+    color:#097bbf;
+    font-family: 'Nunito', sans-serif;
+}
+.fas{
+    font-size: 1.1em;
+}
+.fab{
+    font-size: 1.2em;
+}
+.fab,.fas{
+    color: whitesmoke;
+}
+#about > a{
+    top: 4px;
+    right: 8px;
+}
+.edit{
+    top: 19px;
+    right: 10px;
+}
+#about > a, .edit{
+    position: absolute;
+    font-size: 1.5rem !important;
+}
+.stroke-transparent {
+ -webkit-text-stroke: 1px #000;
+ -webkit-text-fill-color: transparent;
+}
+.blue{
+    color: #097bbf !important;
+    font-size: 1.3rem;
+}
+.stroke-transparent-blue {
+ -webkit-text-stroke: 1px #097bbf;
+ -webkit-text-fill-color: transparent;
+}
+.card{
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+    overflow-x: hidden;
+    margin-bottom: 30px;
+    padding: 15px 30px 30px 30px;
+    background-color: #fff;
+}
+.card > p{
+    color: #0e141e;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+.card > p > i{
+    font-size: 1.8rem;
+}
+.card > a{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    border: 0;
+    height: auto;
+    background: transparent;
+    color: #097bbf;
+    outline: none;
+    cursor: pointer;
+}
+ul {
+    padding: 0 20px;
+}
+.card > ul li{
+/*     list-style-type: none; */
+    display: list-item;
+    list-style-type:square;
+    padding: 0 8px;
+    margin-bottom: 25px;
+}
+#experience ul li, #education ul li{
+    /*     list-style-type: none; */
+    list-style-type:none;   
+    padding: 0; 
+}
+#skills > ul > p.tags{
+    padding: 0;
+    margin:0;
+}
+.profess-container,.about-container, p.description{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 25px;
+    padding: 0;
+    border: 0;
+    height: auto;
+    background: transparent;
+/*     color: #097bbf; */
+    line-height: 1.8;
+}
+p span.description{
+  margin-left: 1.2rem;
+}
+.col-1-1{
+    grid-area:col-1-1;
+}
+.col-1-2{
+    grid-area:col-1-2;
+}
+.col-1-3{
+    grid-area:col-1-3;
+}
+.col-1-4{
+    grid-area:col-1-4;
+}
+.col-1-5{
+    grid-area:col-1-5;
+}
+.col-2-1{
+    grid-area:col-2-1;
+}
+.col-2-2{
+    grid-area:col-2-2;
+}
+.col-2-3{
+    grid-area:col-2-3;
+}
+.col-2-4{
+    grid-area:col-2-4;
+}
+.col-2-5{
+    grid-area:col-2-5;
+}
+.col-3-1{
+    grid-area:col-3-1;
+}
+.col-3-2{
+    grid-area:col-3-2;
+}
+.col-3-3{
+    grid-area:col-3-3;
+}
+.col-3-4{
+    grid-area:col-3-4;
+}
+.col-3-5{
+    grid-area:col-3-5;
+}
+.col-4-1{
+    grid-area:col-4-1;
+}
+.col-4-2{
+    grid-area:col-4-2;
+}
+.col-4-3{
+    grid-area:col-4-3;
+}
+.col-4-4{
+    grid-area:col-4-4;
+}
+.col-4-5{
+    grid-area:col-4-5;
+}
+/* .profess-container{
+    margin-left: 0;
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "col-1-1 col-2-1"
+      "col-1-2 col-2-2"
+      "col-1-3 col-2-3"
+      "col-1-4 col-2-4"
+      "col-1-5 col-2-5";
+} */
+/* .about-container{
+    min-height: 300px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "col-1-1 col-2-1 col-3-1 col-4-1"
+      "col-1-2 col-2-2 col-3-2 col-4-2"
+      "col-1-3 col-2-3 col-3-3 col-4-3"
+      "col-1-4 col-2-4 col-3-4 col-4-4"
+      "col-1-5 col-2-5 col-3-5 col-4-5";
+} */
+.tags{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+.tags ~ a{
+    display: none !important;
+}
+.tags span{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #0e141e;
+}
+.tags span span{
+    color: #738f93;
+}
+@media screen and (max-width:1090px){
+    #profile{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:700px){
+    #container{
+        display: block;
+    }
+    #profile{
+        width: 90%;
+    }
+    .card{
+        margin: 0 5%;
+        margin-bottom: 30px;
+    }
+}

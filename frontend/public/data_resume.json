@@ -1,0 +1,99 @@
+{
+	"personalData":{
+		"name":"Tonatiuh Zamarron",
+		"title":"Junior Systems Engineer",
+		"image":"https://i.ibb.co/R3KDyDC/Photo-Sketch.jpg",
+		"contacts":[
+			{
+				"type":"phone",
+				"value":"+52 (111) 111 11 11"
+			},
+			{
+				"type":"email",
+				"value":"tonatiuh@example.com"
+			},
+			{
+				"type":"location",
+				"value":"Jalisco, MX"
+			},
+			{
+				"type":"linkedin",
+				"value":"linkedin.com/in/TonatiuhZamarron"
+			},
+			{
+				"type":"github",
+				"value":"github.com/tonatiuh369"
+			}
+		]
+	},
+	"summary":[
+		{
+			"paragraph":"Mathematical physicist from UNAM with a background in front end web development and SQL data analysis. Knowledge of technologies and programming languages: HTML/CSS, JavaScript, ReactJS, SQL, Python, Java, and others. Interest in applying my knowledge in programming areas to develop professionally with excellence, contributing in the development of solutions for society."
+		},
+		{
+			"paragraph":""
+		}
+	],
+	"skills":{
+		"languages":"HTML, CSS, JavaScript, ReactJS, SQL, Python, Java.",
+		"db":"SQL Server, MySQL, Teradata.",
+		"vcs":"Git, GitHub.",
+		"ides":"Visual Studio Code, IntelliJ IDEA, Eclipse, SSMS.",
+		"cms":"WordPress (Elementor, Divi, WPBakery)."
+	},
+	"projects":[
+		{
+			"name":"Movie Database App",
+			"technologies":"ReactJS, TMDB API, Bootstrap"
+		},
+		{
+			"name":"Meditation Music App",
+			"technologies":"JavaScript, HTML, CSS"
+		},
+		{
+			"name":"Web Landing Pages",
+			"technologies":"Javascript, HTML, CSS"
+		},
+		{
+			"name":"Snake Game and Minesweeper Game",
+			"technologies":"Java"
+		}
+	],
+	"experience":[
+		{
+			"end":"Present",
+			"start":"Jun, 2022",
+			"position":"Junior Systems Engineer",
+			"company":"EPAM"
+		},
+		{
+			"end":"Jun, 2022",
+			"start":"Jun, 2021",
+			"position":"Jr. Front End Developer",
+			"company":"Freelance"
+		},
+		{
+			"end":"Jun, 2021",
+			"start":"May, 2020",
+			"position":"CRM SQL Analyst",
+			"company":"Bradescard/Bradesco"
+		}
+	],
+	"education_":[
+		{
+			"school":"National Autonomous University of Mexico",
+			"degree":"Bachelor of Science in Physics"
+		}
+	],
+	"languages":[
+		{
+			"language":"English",
+			"level":"Intermediate-Advanced"
+		},
+		{
+			"language":"Spanish",
+			"level":"Native"
+		}
+	]
+
+}
