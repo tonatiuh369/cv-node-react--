@@ -7,14 +7,24 @@ import axios from "axios";
 function App() {
 
   const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getData = async () => {
+      try{
         const response = await axios.get(
-          //`data_resume.json` // <-for local testing
-          "http://localhost:3100/users" // <-backend json url
+          //`data_resume.json` // <-for local testing (json in public folder)
+          "http://localhost:3100/users" // <-backend json data url
         );
         setData(response.data);
+        setError(null);
+      } catch (err) {
+        setError(err.message);
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
     };
     getData();
   }, []);
@@ -97,6 +107,10 @@ function App() {
 
   return (
     <div className="App">
+      {loading && <div className="loading">A moment please...</div>}
+      {error && (
+        <div className="loading">{`There is a problem fetching the post data - ${error}`}</div>
+      )}
       <div id="container">
         <Profile 
           image_={data && data.personalData.image}
